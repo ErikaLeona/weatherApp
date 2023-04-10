@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body onload="DefaultScreen()">
+    <div class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="date" id="date">
+                    Sâmbătă, 8 Aprilie
+                </div>
+                <div class="others" id="current-weather-info">
+                    <div class="weather-item" >
+                        <div>Temperatura</div>
+                        <div id="temperature">50&#176;C</div>
+                    </div>
+                    <div class="weather-item">
+                        <div>Umiditate</div>
+                        <div id="humidity">50%</div>
+                    </div>
+                    <div class="weather-item">
+                        <div>Presiune</div>
+                        <div id="pressure">50</div>
+                    </div>
+                    <div class="weather-item">
+                        <div>Viteza vântului</div>
+                        <div id="wind">5km/h</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="cow.png" id="cow">
+        </div>
+        <div class="search-container"> 
+            <p id="inputContainer">Oraș: <input type="text" id="cityInput"></p>
+            <button type="button" onclick="GetInfo()">Caută</button>
+        </div>  
+        <div id="hour-weather-container">
+            <div class = "icons-hour">
+                <p class="weather-forecast-item" id="1"></p>
+                <p class="hour" id="dayHour1">Loading...</p>
+                <div class="image"><img src="cow.png"  id="imghour1"></div>
+                <p class="temp" id="dayTemp1">Loading...</p>
+            </div>
+            <div class = "icons-hour">
+                <p class="weather-forecast-item" id="2"></p>
+                <p class="hour" id="dayHour2">Loading...</p>
+                <div class="image"><img src="cow.png"  id="imghour2"></div>
+                <p class="temp" id="dayTemp2">Loading...</p>
+            </div>
+            <div class = "icons-hour">
+                <p class="weather-forecast-item" id="3"></p>
+                <p class="hour" id="dayHour3">Loading...</p>
+                <div class="image"><img src="cow.png"  id="imghour3"></div>
+                <p class="temp" id="dayTemp3">Loading...</p>
+            </div>
+            <div class = "icons-hour">
+                <p class="weather-forecast-item" id="4"></p>
+                <p class="hour" id="dayHour4">Loading...</p>
+                <div class="image"><img src="cow.png"  id="imghour4"></div>
+                <p class="temp" id="dayTemp4">Loading...</p>
+            </div>
+            <div class = "icons-hour">
+                <p class="weather-forecast-item" id="5"></p>
+                <p class="hour" id="dayHour5">Loading...</p>
+                <div class="image"><img src="cow.png"  id="imghour5"></div>
+                <p class="temp" id="dayTemp5">Loading...</p>
+            </div>
+            <div class = "icons-hour">
+                <p class="weather-forecast-item" id="6"></p>
+                <p class="hour" id="dayHour6">Loading...</p>
+                <div class="image"><img src="cow.png"  id="imghour6"></div>
+                <p class="temp" id="dayTemp6">Loading...</p>
+            </div>
+            <div class = "icons-hour">
+                <p class="weather-forecast-item" id="7"></p>
+                <p class="hour" id="dayHour7">Loading...</p>
+                <div class="image"><img src="cow.png"  id="imghour7"></div>
+                <p class="temp" id="dayTemp7">Loading...</p>
+            </div>
+            <div class = "icons-hour">
+                <p class="weather-forecast-item" id="8"></p>
+                <p class="hour" id="dayHour8">Loading...</p>
+                <div class="image"><img src="cow.png"  id="imghour8"></div>
+                <p class="temp" id="dayTemp8">Loading...</p>
+            </div>            
+        </div>
+        <div id="weather-container">    
+            <div class = "icons">
+                <p class="weather-forecast-item" id="day1"></p>
+                <div class="image"><img src="cow.png" class="imgClass" id="img1"></div>
+                <p class="maxValues" id="day1Max">Loading...</p>
+                <p class="minValues" id="day1Min">Loading...</p>
+            </div>
+            <div class = "icons">
+                <p class="weather-forecast-item" id="day2"></p>
+                <div class="image"><img src="cow.png" class="imgClass" id="img2"></div>
+                <p class="maxValues" id="day2Max">Loading...</p>
+                <p class="minValues" id="day2Min">Loading...</p>
+            </div>
+            <div class = "icons">
+                <p class="weather-forecast-item" id="day3"></p>
+                <div class="image"><img src="cow.png" class="imgClass" id="img3"></div>
+                <p class="maxValues" id="day3Max">Loading...</p>
+                <p class="minValues" id="day3Min">Loading...</p>
+            </div>
+             <div class = "icons">
+                <p class="weather-forecast-item" id="day4"></p>
+                <div class="image"><img src="cow.png" class="imgClass" id="img4"></div>
+                <p class="maxValues" id="day4Max">Loading...</p>
+                <p class="minValues" id="day4Min">Loading...</p>
+            </div>
+            <div class = "icons">
+                <p class="weather-forecast-item" id="day5"></p>
+                <div class="image"><img src="cow.png" class="imgClass" id="img5"></div>
+                <p class="maxValues" id="day5Max">Loading...</p>
+                <p class="minValues" id="day5Min">Loading...</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
